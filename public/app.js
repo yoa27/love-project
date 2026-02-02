@@ -67,7 +67,7 @@ function showCard() {
         document.querySelector('.card-area').innerHTML = `
             <div class="retro-window">
                 <div class="window-bar">Fin.exe</div>
-                <div class="window-content">Merci mon cœur ! 💖<br>J'ai tout reçu.</div>
+                <div class="window-content">yes I’m still bored <br>I appreciate you responding to Mrs. President's request.</div>
             </div>`;
         document.querySelector('.controls').style.display = 'none';
         return;
