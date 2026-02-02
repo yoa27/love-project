@@ -1,6 +1,6 @@
 // C'EST ICI QUE TU MODIFIES TES QUESTIONS
 const reasons = [
-    reasons = [
+    
     "Your eyes (obviously).",
     "Your smile that makes me forget everything.",
     "Your laugh, especially when it gets out of control.",
@@ -52,7 +52,7 @@ const reasons = [
     "Just your presence, simply.",
     "The fact that you chose me.",
     "Because it's you, and that's enough for me to love you."
-]
+
 ];
 
 let currentIndex = 0;
