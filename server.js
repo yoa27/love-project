@@ -10,10 +10,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Configuration Email (Gmail)
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false, 
     auth: {
-        user: process.env.EMAIL_USER, // Sera lu depuis les paramètres de Render
-        pass: process.env.EMAIL_PASS  // Sera lu depuis les paramètres de Render
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
+    },
+    tls: {
+        rejectUnauthorized: false 
     }
 });
 
