@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    background-color: #ffc0cb;
+    font-family: 'Courier New', monospace;
+    height: 100vh;
+    overflow: hidden;
+}
+.main-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff0f5;
+    border-left: 2px solid #ff69b4;
+    border-right: 2px solid #ff69b4;
+}
+header {
+    flex: 0 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    background: #ff69b4;
+    color: white;
+    font-weight: bold;
+    border-bottom: 4px ridge #d84594;
+}
+.counter-box {
+    background: white; color: black; padding: 5px 10px; border: 2px inset #ccc;
+}
+.card-area {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.retro-window {
+    width: 100%;
+    background: #e0e0e0;
+    border: 3px outset white;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+}
+.window-bar {
+    background: linear-gradient(90deg, #ff1493, #ff69b4);
+    color: white; padding: 5px; font-weight: bold;
+}
+.window-content {
+    padding: 40px 20px; text-align: center; font-size: 1.4rem; color: #333; font-weight: bold;
+}
+.controls {
+    flex: 0 0 100px;
+    display: flex; gap: 15px; padding: 10px;
+    background: #ffb6c1; border-top: 2px solid #ff69b4;
+}
+.btn {
+    flex: 1; border: 4px outset #ff69b4;
+    font-size: 1.5rem; font-weight: bold; font-family: inherit;
+    cursor: pointer; background: #ff1493; color: white;
+}
+.btn-not { background: white; color: red; }
+.btn:active { border-style: inset; transform: translateY(2px); }

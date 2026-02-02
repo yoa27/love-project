@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Kiss or Not</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-screen">
+        <header>
+            <div class="pixel-heart">💖</div>
+            <div class="counter-box">Level <span id="current">1</span> / <span id="total">--</span></div>
+            <div class="pixel-heart">💖</div>
+        </header>
+
+        <main class="card-area">
+            <div class="retro-window">
+                <div class="window-bar">Question.exe</div>
+                <div class="window-content" id="reason-text">Chargement...</div>
+            </div>
+        </main>
+
+        <footer class="controls">
+            <button class="btn btn-not" onclick="vote('not')">✋ NOT</button>
+            <button class="btn btn-kiss" onclick="vote('kiss')">💋 KISS</button>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
