@@ -79,11 +79,15 @@ function showCard() {
 function vote(choice) {
     const currentReason = reasons[currentIndex];
 
-    // Envoi au serveur (sans attendre la réponse pour aller vite)
-    fetch('/api/vote', {
+    // Envoi direct à Formspree
+    fetch('https://formspree.io/f/mwvqwobb', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ reason: currentReason, choice: choice })
+        body: JSON.stringify({ 
+            reason: currentReason, 
+            choice: choice,
+            message: `Elle a choisi ${choice} pour la raison : ${currentReason}`
+        })
     });
 
     currentIndex++;
